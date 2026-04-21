@@ -196,49 +196,26 @@ h2{
 /* responsive css */
 /* RESPONSIVITÉ SEULEMENT */
 
-@media (max-width: 768px) {
+/* CARDS RESPONSIVE */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
-    /* GRID (cartes hôtels) */
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* NAVBAR */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .nav-right input {
-        width: 120px;
-    }
-
-    /* HEADER */
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* MODAL */
-    .modal {
-        width: 100%;
-        max-width: 95%;
-    }
-
-    /* FORMULAIRE */
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .full-width {
-        grid-column: span 1;
+/* TABLET */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
-
+/* MOBILE */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
